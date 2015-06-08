@@ -127,7 +127,8 @@ describe "Nested Data Structures" do
 
     it 'can add data to the third level' do
       # Add Assembly to Dennis Ritchie's Languages
-      profiles[:dennis_ritchie][:languages] = ["C","Assembly"]
+      profiles[:dennis_ritchie][:languages] = ["C","Assembly"] 
+      # or << "Assembly"
       expect(profiles[:dennis_ritchie][:languages]).to include("Assembly")
     end
   end
